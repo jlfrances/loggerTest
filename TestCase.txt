@@ -1,0 +1,17 @@
+Test Case:
+
+1) Goal of test application is to look-up in the LOG file (please see attached zip file) all lines which match sub-string definitions stored in the separate config file. Matched lines as well as related statistics are written into special result file.
+2) Format of result file is same like Filter1Result.txt in zip. It has to contain
+	- Label for Sub-string patter used
+	- Num of lines found
+	- Full log line which match pattern
+	- Line log number where pattern was found
+3) Sub-strings are defined in special text file in same format like Filter1.def. File content must comply with following constrains
+	- Line format is as follows: <label>,<search sub-string> on each line
+	- Delimiter between parts is comma
+	- Use same label two-more times is error
+	- Comma is not allowed in label text
+	- Label can’t be empty
+	- sub-string pattern can’t be empty
+4) Exe runs with command line parameters shown in file Run.
+5) File Filter1Result.txt was directly generated out of Filter1.def definitions. You can use it for correctness testing.
